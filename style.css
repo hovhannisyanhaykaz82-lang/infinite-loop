@@ -1,0 +1,970 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+header {
+	width: 100%;
+	height: auto;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	backdrop-filter: blur(10px);
+	background-color: rgba(0, 0, 0, 0.486);
+	position: fixed;
+	padding: 10px 20px;
+	z-index: 999999;
+}
+
+.header>a {
+	font-family: "Raleway", sans-serif;
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+}
+
+
+
+.header>h2>a:hover {
+	color: blue;
+}
+
+.header > nav > ul {
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	gap: 20px;
+	padding: 30px;
+	list-style-type: none;
+}
+
+
+
+.header nav a {
+	text-decoration: none;
+	color: white;
+	font-size: 18px;
+	font-family: "Raleway", sans-serif;
+	transition: 0.3s;
+	padding: 10px 20px;
+}
+
+.header> nav ul>li>a:hover {
+	background-color: blue;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.banner {
+	background-image: url('https://www.tooplate.com/templates/2117_infinite_loop/img/infinite-loop-01.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 110vh;
+}
+
+.first-info {
+	display: flex;
+	width: 100%;
+	height: 85vh;
+	gap: 20px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	line-height: 1.5;
+}
+
+.first-info h1 {
+	font-size: 60px;
+	color: white;
+	font-family: inherit;
+}
+
+.first-info p {
+	color: white;
+	font-size: 22px;
+}
+
+.down-button {
+	width: 100px;
+	height: 60px;
+	background-color: #1D3B7D;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	transition: 0.3s;
+	border: none;
+}
+
+.first-info > button > svg {
+	background-color: #1D3B7D;
+	color: white;
+	justify-content: center;
+	align-items: end;
+	transition: 0.3s;
+}
+
+.down-button>button {
+	border: none;
+}
+
+.down-button:hover {
+	background-color: #1E47A6;
+	transform: scale(1.3);
+}
+
+
+
+.down-button:hover svg {
+	background-color: #1E47A6;
+	transform: scale(1.3);
+}
+
+.what-we-do {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	min-height: auto;
+	padding: 80px 40px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+
+.what-we-do>h2 {
+	color: blue;
+	font-size: 40px;
+	font-family: "Raleway", sans-serif;
+	font-weight: 1;
+}
+
+.what-we-do>p {
+	color: grey;
+	font-size: 21px;
+	line-height: 1.9;
+}
+
+.what-we-do>p>a {
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.what-we-do>p>a:hover {
+	color: red;
+}
+
+.services {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	background-color: white;
+	height: auto;
+}
+
+.service {
+	width: 46%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 15px;
+}
+
+.service svg {
+	color: blue;
+}
+
+.service h3 {
+	color: blue;
+	font-size: 30px;
+}
+
+.service p {
+	color: grey;
+	font-size: 21px;
+}
+
+.service button {
+	border: none;
+	background-color: blue;
+	color: white;
+	width: 170px;
+	height: 70px;
+	font-size: 17px;
+}
+
+.service button:hover {
+	background-color: #466CC7;
+	transition: 0.3s;
+}
+
+.testimonials {
+	background-image: url(https://www.tooplate.com/templates/2117_infinite_loop/img/infinite-loop-02.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	min-height: auto;
+	padding: 10px 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.thred-info {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	margin-top: 70px;
+	text-align: center;
+}
+
+.thred-info h2 {
+	color: white;
+	font-size: 44px;
+}
+
+.thred-info p {
+	color: white;
+}
+
+.people {
+	display: flex;
+	justify-content: center;
+	gap: 40px;
+	margin-top: 60px;
+}
+
+.person {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 300px;
+	gap: 15px;
+}
+
+.person > p {
+	color: white;
+}
+
+.person h4 {
+	color: white;
+}
+
+
+.person img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+
+.gallery {
+	background-color: white;
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.forth-info {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+}
+
+.forth-info>h2 {
+	color: blue;
+	font-size: 40px;
+	text-align: center;
+	margin-top: 100px;
+}
+
+.forth-info>p {
+	color: grey;
+	line-height: 1.4;
+	text-align: center;
+	padding: 0 280px;
+}
+
+.pictures {
+	width: 100%;
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	gap: 15px;
+}
+.picture {
+	width: 300px;
+	height: 400px;
+	position: relative;
+}
+
+.picture img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.picture div {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.694);
+	position: absolute;
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+	gap: 5px;
+	inset: 0;
+	color: white;
+	opacity: 0;
+	transition: .4s;
+}
+
+.picture h4 {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: .4s;
+	transition-delay: .100s;
+}
+.picture span {
+	opacity: 0;
+	transform: translateY(50px);
+	transition: .4s;
+	transition-delay: .200s;
+}
+
+.picture:hover div{
+	opacity: 1;
+}
+.picture:hover h4,.picture:hover span{
+	opacity: 1;
+	transform: translateY(-40px);
+}
+
+.contact {
+	background:linear-gradient(black,rgba(0, 0, 0, 0.483)),url(https://www.tooplate.com/templates/2117_infinite_loop/img/infinite-loop-03.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: auto;
+	gap: 30px;
+}
+
+.fifth-info {
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding: 20px;
+	width: 100%;
+}
+
+.fifth-info>h2 {
+	font-size: 40px;
+	text-align: center;
+	margin-top: 100px;
+	color: white;
+}
+
+.fifth-info>p {
+	font-size: 20px;
+	color: white;
+	text-align: center;
+
+}
+
+.regis {
+	display: flex;
+	flex-direction: column;
+	align-items: end;
+	gap: 30px;
+	width: 50%;
+	margin: 100px 30px;
+}
+
+.regis input {
+	width: 300px;
+	height: 50px;
+	border: 1px solid white;
+	border-radius: 12px;
+	padding: 0 10px;
+}
+
+.regis button {
+	width: 170px;
+	height: 50px;
+	border: none;
+	background-color: blue;
+	color: white;
+	transition: 0.3s;
+	border-radius: 7px;
+}
+
+.regis>button:hover {
+	background-color: #466CC7;
+}
+
+.about-us {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	width: 30%;
+	height: auto;
+	justify-content: center;
+	color: white;
+}
+
+.chat {
+	display: flex;
+	gap: 10px;
+}
+
+.chat h4 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer p {
+	color: black;
+}
+
+#menu {
+	display: none;
+}
+
+.menu-btn {
+	display: none;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+@media(min-width:1024px) and (max-width:1259px) {
+	.header {
+		width: 100%;
+		height: 90px;
+		display: flex;
+	}
+
+	.header>h2 {
+		font-family: "Raleway", sans-serif;
+		padding: 30px;
+		color: white;
+		width: 15%;
+		height: 100%;
+	}
+
+	.header>h2>a {
+		text-decoration: none;
+		color: white;
+		transition: 0.3s;
+	}
+
+	.header>h2>a:hover {
+		color: blue;
+	}
+
+	.header nav {
+		display: flex;
+	}
+
+	.header> nav ul {
+		display: flex;
+		font-size: 10px;
+		width: 100%;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		list-style-type: none;
+	}
+
+	.forth-info>p {
+	    color: grey;
+	    line-height: 1.4;
+	    text-align: center;
+	    padding: 0 120px;
+    }
+
+
+
+	.header> nav ul>li>a {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+		font-family: "Raleway", sans-serif;
+		transition: 0.3s;
+	}
+
+	.header> nav ul>li>a:hover {
+		background-color: blue;
+	}
+
+	.gallery {
+		background-color: white;
+		width: 100%;
+		height: 110vh;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	.pictures {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+	}
+	
+}
+
+@media(min-width:768px) and (max-width:1024px) {
+	.pictures {
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		flex-wrap: wrap;
+		gap: 20px;
+	}
+
+	.pictures img {
+		flex-wrap: wrap;
+	}
+
+	.picture {
+		width: 30%;
+	}
+
+	.gallery {
+		background-color: white;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	.people {
+		display: flex;
+		justify-content: center;
+		gap: 60px;
+		margin-top: 60px;
+	}
+
+	.person {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 220px;
+		gap: 15px;
+	}
+
+
+	.person img {
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+
+	.forth-info>p {
+	    color: grey;
+	    line-height: 1.4;
+	    text-align: center;
+	    padding: 0 110px;
+    }
+
+	.services {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 10px;
+		background-color: white;
+		height: auto;
+	}
+
+	.service {
+		width: 46%;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 15px;
+	}
+
+
+	.menu-btn {
+		display: flex;
+	}
+
+	nav {
+		position: absolute;
+		top: 100%;
+		height: 0;
+		overflow: hidden;
+		width: 400px;
+		background-color: #000000c9;
+		right: 0;
+	}
+	.header nav a{
+		display: flex;
+		width: 100%;
+		border-radius: 10px;
+		background-color: white;
+		color: black;
+	}
+
+	#menu:checked~ nav{
+		height: 320px;
+	}
+
+	
+	
+	header nav ul{
+		flex-direction: column;
+	}
+
+	.header>h2 {
+		font-family: "Raleway", sans-serif;
+		padding: 30px;
+		color: white;
+		width: 90%;
+		height: 100%;
+	}
+}
+
+@media(min-width:552px) and (max-width:768px) {
+	.menu-btn {
+		display: flex;
+	}
+
+	nav {
+		position: absolute;
+		top: 100%;
+		height: 0;
+		overflow: hidden;
+		width: 250px;
+		background-color: #000000c9;
+		right: 0;
+	}
+	.header nav a{
+		display: flex;
+		width: 100%;
+		border-radius: 10px;
+		background-color: white;
+		color: black;
+	}
+
+	#menu:checked~ nav{
+		height: 320px;
+	}
+
+	.forth-info>p {
+	    color: grey;
+	    line-height: 1.4;
+	    text-align: center;
+	    padding: 0 70px;
+    }
+	
+	header nav ul{
+		flex-direction: column;
+	}
+
+	
+
+	.header>h2 {
+		font-family: "Raleway", sans-serif;
+		padding: 30px;
+		color: white;
+		width: 90%;
+		height: 100%;
+	}
+
+	.services {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 10px;
+		background-color: white;
+		height: auto;
+	}
+
+	.service {
+		width: 100%;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5px;
+	}
+
+	.people {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+		margin-top: 60px;
+	}
+
+	.person {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 300px;
+		gap: 15px;
+	}
+
+
+	.person img {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+
+	.person p {
+		font-size: 20px;
+	}
+
+	.person h4 {
+		font-size: 20px;
+	}
+
+	.pictures {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		height: auto;
+	}
+
+	.picture {
+		width: 40%;
+		height: auto;
+	}
+
+	
+
+	.gallery {
+		background-color: white;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	.regis {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		width: 100%;
+		margin-top: 40px;
+		align-items: center;
+	}
+
+	.about-us {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		width: 300px;
+		justify-content: center;
+		align-items: start;
+		margin-bottom: 30px;
+	}
+
+	.contact {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		gap: 30px;
+	}
+
+}
+
+@media(max-width:552px) {
+	.menu-btn {
+		display: flex;
+	}
+
+	nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	nav {
+		position: absolute;
+		top: 100%;
+		height: 0;
+		overflow: hidden;
+		width: 200px;
+		background-color: #000000c9;
+		right: 0;
+	}
+	.header nav a{
+		display: flex;
+		width: 100%;
+		border-radius: 10px;
+		background-color: white;
+		color: black;
+		font-size: 15px;
+
+	}
+
+	.forth-info>p {
+	    color: grey;
+	    line-height: 1.4;
+	    text-align: center;
+	    padding: 0 20px;
+    }
+
+	#menu:checked~ nav{
+		height: 300px;
+	}
+
+	.header>h2 {
+		font-family: "Raleway", sans-serif;
+		padding: 30px;
+		color: white;
+		width: 90%;
+		height: 100%;
+	}
+
+
+	.services {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		gap: 10px;
+		background-color: white;
+		height: auto;
+	}
+
+	.service {
+		width: 100%;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-between;
+		gap: 5px;
+	}
+
+	.people {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 30px;
+		margin-top: 60px;
+	}
+
+	.person {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+		width: 300px;
+		gap: 15px;
+	}
+
+
+	.person img {
+		width: 200px;
+		height: 200px;
+		border-radius: 50%;
+	}
+
+	.person p {
+		font-size: 20px;
+	}
+
+	.person h4 {
+		font-size: 20px;
+	}
+
+	.pictures {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		flex-wrap: wrap;
+		gap: 20px;
+		height: auto;
+	}
+
+	
+
+	.gallery {
+		background-color: white;
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		gap: 80px;
+	}
+
+	.regis {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		width: 100%;
+		margin-top: 40px;
+		align-items: center;
+	}
+
+	.about-us {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		width: 300px;
+		justify-content: center;
+		align-items: start;
+		margin-bottom: 30px;
+	}
+
+	.contact {
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		justify-content: center;
+		gap: 30px;
+	}
+
+	
+}
